@@ -1,0 +1,134 @@
+/* Configurações gerais */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    font-family: "Open Sans", sans-serif;
+}
+
+/* Barra de navegacao */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: white;
+    background-color: black;
+    padding: 1.6% 7%;
+}
+nav #logo{
+    font-size: 1.6em;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+nav #links{
+    display: flex;
+    align-items: ceter;
+    gap: 35px;
+    font-size: 0.95em;
+    font-weight: bold;
+}
+#links > a:hover{
+    color:  #18cc57;
+}
+.fa-spotify{
+    margin-right: 10px;
+    font-size: 1.5em;
+}
+
+/* Banner */
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    color: white;
+    background-color: #ee209c;
+    padding: 6% 10% 4% 7%;
+    gap: 33px;
+}
+header .title{
+    font-size: 2.4em;
+    font-weight: bold;
+}
+header .description{
+    font-size: 1.5em;
+    font-weight: 100;
+}
+
+.btn{
+    padding: 15px 35px;
+    border-radius: 50px;
+    font-weight: 800;
+}
+.primary{
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+}
+.secondary{
+    border: 2px solid white;
+    background-color: transparent;
+    color: black;
+    font-weight: 700;
+}
+
+/* Termos */
+.terms{
+    font-size: 0.6em;
+}
+.terms .link{
+    text-decoration: underline;
+}
+
+/* Pq ser premium */
+#features-premium{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 6.5% 0;
+}
+
+#features-premium > .title{
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 55px;
+}
+#features-premium .features{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%;
+}
+#features-premium .feature{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+}
+#features-premium .feature > img{
+    width: 150px;
+}
+#features-premium .feature .title{
+    font-size: 1.15em;
+    font-weight: bold;
+}
+#features-premium .feature .description{
+    font-size: 0.9em;
+}
