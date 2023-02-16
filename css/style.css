@@ -1,0 +1,64 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* GLOBAL */
+body {
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+/* PREMIUM PLANS */
+.premium-plans {
+  padding: 2.25rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.25rem;
+}
+
+/* Header */
+.premium-plans .header {
+  text-align: center;
+}
+
+.premium-plans .header .title {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.premium-plans .header .subtitle {
+  font-size: 1rem;
+  font-weight: normal;
+  margin-bottom: 1rem;
+}
+
+/* - Payment methods */
+.premium-plans .header .payment-methods,
+.premium-plans .header .payment-methods .bank-cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.premium-plans .header .payment-methods {
+  gap: 0.375rem;
+}
+
+.premium-plans .header .payment-methods .bank-cards {
+  gap: 0.5rem;
+}
+
+.premium-plans .header .payment-methods .bank-cards .bank-card {
+  width: 29px;
+  aspect-ratio: auto;
+}
+
+.premium-plans .header .payment-methods .more-bank-cards-message {
+  text-decoration: underline;
+}
