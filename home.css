@@ -23,7 +23,7 @@ nav{
     color: white;
     background-color: black;
 }
-.wrapper{
+nav .wrapper{
     display: flex;
     max-width: 1150px;
     height: 80px;
@@ -49,31 +49,136 @@ nav .wrapper #links{
     color:  #18cc57;
 }
 
+#menu img{
+    width: 30px;
+    display: none;
+}
+
+
+/* Banner */
+.wrapper-header{
+    width: 100%;
+    color: white;
+    background-color: #18cc57;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: auto;
+    padding: 60px 0;
+    max-width: 1150px;
+    gap: 33px;
+    margin: 0 auto;
+}
+header .title{
+    font-size: 2.4em;
+    font-weight: bold;
+}
+header .description{
+    font-size: 1.5em;
+    font-weight: 100;
+}
+
+.btn{
+    padding: 15px 35px;
+    border-radius: 50px;
+    font-weight: 800;
+    cursor: pointer;
+}
+.primary{
+    border: 2px solid rgb(22, 22, 22);
+    background-color: rgb(22, 22, 22);
+    color: white;
+}
+.secondary{
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    font-weight: 700;
+}
+.primary:hover{
+    background-color: black;
+    border: 2px solid black;
+}
+.secondary:hover{
+    background-color: #36c969;
+}
+
+/* Termos */
+.terms{
+    font-size: 0.6em;
+}
+.terms .link{
+    text-decoration: underline;
+}
+
 /* Media queries */
 @media only screen and (max-width: 1200px){
-    nav .wrapper{
+    nav .wrapper, header{
         max-width: 950px;
         padding: 0 20px;
+    }
+
+    header{
+        padding: 6% 20px 4% 20px;
     }
 }
 
 @media only screen and (max-width: 900px){
-    nav .wrapper{
-        padding: 0 20px;
+    header .title{
+        font-size: 1.9em;
+    }
+    header .description{
+        font-size: 1.3em;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    nav .wrapper #links{
+        display: none;
+    }
+    #menu img{
+        display: inline-block;
+    }
+
+    header{
+        gap:25px;
+    }
+    header .title{
+        font-size: 1.8em;
+    }
+    header .description{
+        font-size: 1.1em;
+    }
+    header .buttons{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+        justify-items: flex-start;
+        align-items: center;
+        gap: 10px;
+    }
+    header .btn{
+        width: 100%;
     }
 }
 
 @media only screen and (max-width: 650px){
-    nav .wrapper{
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        height: 130px;
+    header{
+        gap: 15px;
     }
-}
-
-@media only screen and (max-width: 535px){
-    nav .wrapper #links{
-        display: none;
+    header .title{
+        font-size: 1.4em;
+    }
+    header .description{
+        font-size: 1em;
+    }
+    header .btn{
+        width: 100%;
+        padding: 14px 34px;
+        font-size: 0.8em;
     }
 }
