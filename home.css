@@ -1,0 +1,79 @@
+/* Configurações gerais */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    font-family: "Open Sans", sans-serif;
+}
+
+/* Barra de navegacao */
+nav{
+    width: 100%;
+    color: white;
+    background-color: black;
+}
+.wrapper{
+    display: flex;
+    max-width: 1150px;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+nav .wrapper #logo{
+    font-size: 1.6em;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    width: 135px;
+}
+nav .wrapper #links{
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    font-size: 0.95em;
+    font-weight: bold;
+}
+#links > a:hover{
+    color:  #18cc57;
+}
+
+/* Media queries */
+@media only screen and (max-width: 1200px){
+    nav .wrapper{
+        max-width: 950px;
+        padding: 0 20px;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    nav .wrapper{
+        padding: 0 20px;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    nav .wrapper{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 130px;
+    }
+}
+
+@media only screen and (max-width: 535px){
+    nav .wrapper #links{
+        display: none;
+    }
+}
