@@ -15,7 +15,7 @@
 
 /* GLOBAL */
 body {
-  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 ul {
@@ -32,48 +32,62 @@ ul {
 }
 
 /* Header */
-.premium-plans .premium-plans-header {
+.premium-plans .premium-plans__header {
   text-align: center;
 }
 
-.premium-plans .premium-plans-header .premium-plans-title {
-  font-size: 1.75rem;
+.premium-plans .premium-plans__header .header__title {
+  font-size: 2rem;
   margin-bottom: 0.5rem;
 }
 
-.premium-plans .premium-plans-header .premium-plans-subtitle {
+.premium-plans .premium-plans__header .header__subtitle {
   font-size: 1rem;
   font-weight: normal;
   margin-bottom: 1rem;
 }
 
 /* - Payment methods */
-.premium-plans .premium-plans-header .payment-methods,
-.premium-plans .premium-plans-header .payment-methods .bank-cards {
+.premium-plans .premium-plans__header .header__payment-methods,
+.premium-plans
+  .premium-plans__header
+  .header__payment-methods
+  .payment-methods__bank-cards {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.premium-plans .premium-plans-header .payment-methods {
+.premium-plans .premium-plans__header .header__payment-methods {
   gap: 0.375rem;
 }
 
-.premium-plans .premium-plans-header .payment-methods .bank-cards {
+.premium-plans
+  .premium-plans__header
+  .header__payment-methods
+  .payment-methods__bank-cards {
   gap: 0.5rem;
 }
 
-.premium-plans .premium-plans-header .payment-methods .bank-cards .bank-card {
+.premium-plans
+  .premium-plans__header
+  .header__payment-methods
+  .payment-methods__bank-cards
+  .bank-cards__card-image {
   width: 29px;
   aspect-ratio: auto;
 }
 
-.premium-plans .premium-plans-header .payment-methods .more-bank-cards-message {
+.premium-plans
+  .premium-plans__header
+  .header__payment-methods
+  .payment-methods__more-methods-message {
   text-decoration: underline;
 }
 
 /* Cards */
-.premium-plans .cards .card {
+.premium-plans .premium-plans__cards .cards__card {
+  background-color: var(--primary-white);
   padding: 1.25rem;
   border-radius: 0.5rem;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
@@ -84,37 +98,56 @@ ul {
 }
 
 /* - Label */
-.premium-plans .cards .card .card-labels {
+.premium-plans
+  .premium-plans__cards
+  .cards__card
+  .card__header
+  .header__labels {
+  color: var(--primary-white);
+  font-size: 0.875rem;
+  font-weight: bolder;
+
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
-.premium-plans .cards .card .card-labels .card-label {
-  color: var(--primary-white);
-  font-size: 0.75rem;
-  font-weight: bolder;
-
+.premium-plans
+  .premium-plans__cards
+  .cards__card
+  .card__header
+  .header__labels
+  .labels__label {
   width: fit-content;
-  background-color: var(--primary-blue);
   padding: 0.25rem 0.5rem;
   border: 1px solid var(--primary-blue);
   border-radius: 0.25rem;
 }
 
-.premium-plans .cards .card .card-labels {
-  margin-bottom: 0.5rem;
+.premium-plans
+  .premium-plans__cards
+  .cards__card
+  .card__header
+  .header__labels
+  .labels__label.labels__label.labels__label--full {
+  background-color: var(--primary-blue);
 }
 
-.premium-plans .cards .card .card-labels .card-label.outline {
+.premium-plans
+  .premium-plans__cards
+  .cards__card
+  .card__header
+  .header__labels
+  .labels__label.labels__label--outline {
   color: var(--primary-blue);
   background-color: var(--primary-white);
 }
 
-.premium-plans .cards .card .card-title {
+.premium-plans .premium-plans__cards .cards__card .card__header .header__title {
   font-size: 1.5rem;
 }
 
-.premium-plans .cards .card .plan-price {
+.premium-plans .premium-plans__cards .cards__card .card__header .header__price {
   margin: 0.25rem 0 0.125rem;
 }
