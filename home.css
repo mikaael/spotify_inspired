@@ -88,8 +88,8 @@ header .description{
     cursor: pointer;
 }
 .primary{
-    border: 2px solid rgb(22, 22, 22);
-    background-color: rgb(22, 22, 22);
+    border: 2px solid rgb(36, 36, 36);
+    background-color: rgb(36, 36, 36);
     color: white;
 }
 .secondary{
@@ -103,7 +103,7 @@ header .description{
     border: 2px solid black;
 }
 .secondary:hover{
-    background-color: #36c969;
+    background-color: #7beca3;
 }
 
 /* Termos */
@@ -112,6 +112,59 @@ header .description{
 }
 .terms .link{
     text-decoration: underline;
+}
+
+
+/* Pq ser premium */
+.wrapper-features{
+    width: 100%;
+    color: black;
+    background-color: white;
+}
+
+#features-premium{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+#features-premium > .title{
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 55px;
+}
+#features-premium .features{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1100px;
+    width: 1100px;
+    flex-wrap: wrap;
+}
+#features-premium .feature{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+    width: 25%;
+
+}
+#features-premium .feature > img{
+    width: 150px;
+}
+#features-premium .feature .title{
+    font-size: 1.15em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+#features-premium .feature .description{
+    font-size: 0.9em;
 }
 
 /* Media queries */
@@ -124,6 +177,10 @@ header .description{
     header{
         padding: 6% 20px 4% 20px;
     }
+
+    #features-premium .features{
+        max-width: 900px;
+    }
 }
 
 @media only screen and (max-width: 900px){
@@ -132,6 +189,14 @@ header .description{
     }
     header .description{
         font-size: 1.3em;
+    }
+
+    #features-premium .features{
+        width: 80%;
+        row-gap: 20px;
+    }
+    #features-premium .feature{
+        width: 40%;
     }
 }
 
@@ -164,6 +229,20 @@ header .description{
     header .btn{
         width: 100%;
     }
+
+    #features-premium .features{
+        flex-direction: column;
+        gap: 20px;
+    }
+    #features-premium .feature{
+        flex-direction: row;
+        width: 100%;
+        text-align: left;
+    }
+    #features-premium .text{
+        margin-left: 10px;
+    }
+
 }
 
 @media only screen and (max-width: 650px){
