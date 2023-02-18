@@ -7,9 +7,11 @@
 
 /* VARIABLES */
 :root {
-  --primary-white: #fff;
-  --primary-black: #000;
+  --primary-white: #ffffff;
+  --primary-black: #000000;
+  --secondary-black: #191414;
   --primary-gray: #efefef;
+  --primary-dark-gray: #535353;
   --primary-blue: #2e77d0;
 }
 
@@ -18,17 +20,41 @@ body {
   font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 ul {
   list-style: none;
+}
+
+.premium-plans,
+.premium-plans .premium-plans__cards .cards__card .card__header,
+.premium-plans .premium-plans__cards .cards__card .card__header .header__labels,
+.premium-plans .premium-plans__cards .cards__card .card__body .body__offers {
+  display: flex;
+  flex-direction: column;
+}
+
+.premium-plans .premium-plans__header .header__payment-methods,
+.premium-plans .premium-plans__header .header__payment-methods .payment-methods__bank-cards,
+.premium-plans .premium-plans__cards .cards__card .card__body .body__offers .offers__offer {
+  display: flex;
+  align-items: center;
+}
+
+.premium-plans .premium-plans__header .header__payment-methods .payment-methods__bank-cards,
+.premium-plans .premium-plans__cards .cards__card .card__header,
+.premium-plans .premium-plans__cards .cards__card .card__header .header__labels,
+.premium-plans .premium-plans__cards .cards__card .card__body .body__offers .offers__offer {
+  gap: 0.5rem;
 }
 
 /* PREMIUM PLANS */
 .premium-plans {
   background-color: var(--primary-gray);
   padding: 2.25rem 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 3.25rem;
+  gap: 3rem;
 }
 
 /* Header */
@@ -37,7 +63,7 @@ ul {
 }
 
 .premium-plans .premium-plans__header .header__title {
-  font-size: 2rem;
+  font-size: 1.75rem;
   margin-bottom: 0.5rem;
 }
 
@@ -48,40 +74,21 @@ ul {
 }
 
 /* - Payment methods */
-.premium-plans .premium-plans__header .header__payment-methods,
-.premium-plans
-  .premium-plans__header
-  .header__payment-methods
-  .payment-methods__bank-cards {
-  display: flex;
-  align-items: center;
+.premium-plans .premium-plans__header .header__payment-methods {
+  gap: 0.375rem;
   justify-content: center;
 }
 
-.premium-plans .premium-plans__header .header__payment-methods {
-  gap: 0.375rem;
+.premium-plans .premium-plans__header .header__payment-methods .payment-methods__bank-cards {
+  justify-content: center;
 }
 
-.premium-plans
-  .premium-plans__header
-  .header__payment-methods
-  .payment-methods__bank-cards {
-  gap: 0.5rem;
-}
-
-.premium-plans
-  .premium-plans__header
-  .header__payment-methods
-  .payment-methods__bank-cards
-  .bank-cards__card-image {
+.premium-plans .premium-plans__header .header__payment-methods .payment-methods__bank-cards .bank-cards__card-image {
   width: 29px;
   aspect-ratio: auto;
 }
 
-.premium-plans
-  .premium-plans__header
-  .header__payment-methods
-  .payment-methods__more-methods-message {
+.premium-plans .premium-plans__header .header__payment-methods .payment-methods__more-methods-message {
   text-decoration: underline;
 }
 
@@ -91,63 +98,80 @@ ul {
   padding: 1.25rem;
   border-radius: 0.5rem;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
-
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
 }
 
-/* - Label */
-.premium-plans
-  .premium-plans__cards
-  .cards__card
-  .card__header
-  .header__labels {
+.premium-plans .premium-plans__cards .cards__card .card__divider {
+  margin: 1.25rem 0 2rem;
+}
+
+/* - Header */
+.premium-plans .premium-plans__cards .cards__card .card__header .header__labels {
   color: var(--primary-white);
   font-size: 0.875rem;
   font-weight: bolder;
-
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  margin-bottom: 0.5rem;
 }
 
-.premium-plans
-  .premium-plans__cards
-  .cards__card
-  .card__header
-  .header__labels
-  .labels__label {
+.premium-plans .premium-plans__cards .cards__card .card__header .header__labels .labels__label {
   width: fit-content;
   padding: 0.25rem 0.5rem;
   border: 1px solid var(--primary-blue);
   border-radius: 0.25rem;
 }
 
-.premium-plans
-  .premium-plans__cards
-  .cards__card
-  .card__header
-  .header__labels
-  .labels__label.labels__label.labels__label--full {
+.premium-plans .premium-plans__cards .cards__card .card__header .header__labels .labels__label.labels__label--full {
   background-color: var(--primary-blue);
 }
 
-.premium-plans
-  .premium-plans__cards
-  .cards__card
-  .card__header
-  .header__labels
-  .labels__label.labels__label--outline {
+.premium-plans .premium-plans__cards .cards__card .card__header .header__labels .labels__label.labels__label--outline {
   color: var(--primary-blue);
   background-color: var(--primary-white);
 }
 
-.premium-plans .premium-plans__cards .cards__card .card__header .header__title {
+.premium-plans .premium-plans__cards .cards__card .card__header .header__plan-info .plan-info__title {
   font-size: 1.5rem;
 }
 
-.premium-plans .premium-plans__cards .cards__card .card__header .header__price {
+.premium-plans .premium-plans__cards .cards__card .card__header .header__plan-info .plan-info__price {
   margin: 0.25rem 0 0.125rem;
+}
+
+/* - Body */
+.premium-plans .premium-plans__cards .cards__card .card__body {
+  gap: 1rem;
+}
+
+.premium-plans .premium-plans__cards .cards__card .card__body .body__offers {
+  gap: 0.875rem;
+}
+
+.premium-plans .premium-plans__cards .cards__card .card__body .body__offers .offers__offer .offer__check-icon {
+  min-width: 1.5rem;
+  aspect-ratio: 1/1;
+}
+
+.premium-plans .premium-plans__cards .cards__card .card__body .body__buy-button {
+  color: var(--primary-white);
+  font-size: 0.875rem;
+  font-weight: bold;
+  text-align: center;
+
+  background-color: var(--secondary-black);
+  margin: 1.5rem 0 1rem;
+  padding: 1rem 0;
+  border-radius: 9999px;
+  display: block;
+}
+
+.premium-plans .premium-plans__cards .cards__card .card__body .body__buy-button:hover {
+  transform: scale(1.05);
+}
+
+.premium-plans .premium-plans__cards .cards__card .card__body .body__terms-and-conditions {
+  color: var(--primary-dark-gray);
+  font-size: 0.75rem;
+}
+
+.premium-plans .premium-plans__cards .cards__card .card__body .body__terms-and-conditions .terms-and-conditions__link {
+  color: var(--primary-dark-gray);
+  text-decoration: underline;
 }
