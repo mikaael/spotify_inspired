@@ -1,490 +1,474 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Spotify</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify</title>
 
-        <!-- Link CSS -->
-        <link rel="stylesheet" href="./css/home.css" />
-    </head>
-    <body>
-        <div id="vidal-wrapper">
-            <!-- Barra de navegação -->
-            <nav>
-                <div class="wrapper">
-                    <div id="logo">
-                        <img src="assets/icons/banner/logoSpotify.svg" alt="">
-                    </div>
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="./css/home.css" />
+  </head>
+  <body>
+    <div id="vidal-wrapper">
+      <!-- Barra de navegação -->
+      <nav>
+        <div class="wrapper">
+          <div id="logo">
+            <img src="assets/icons/banner/logoSpotify.svg" alt="" />
+          </div>
 
-                    <div id="menu">
-                        <img src="assets/icons/menu-icon.svg" alt="">
-                    </div>
+          <div id="menu">
+            <img src="assets/icons/menu-icon.svg" alt="" />
+          </div>
 
-                    <div id="links">
-                        <a href="">Premium</a>
-                        <a href="">Suporte</a>
-                        <a href="">Baixar</a>
-                        <a href="">|</a>
-                        <a href="">Inscrever-se</a>
-                        <a href="">Entrar</a>
-                    </div>
-                </div>
-            </nav>
-
-            <!-- Banner -->
-            <div class="wrapper-header">
-                <header id="banner">
-                    <div class="title">
-                        Curta o Premium grátis por 2 meses
-                    </div>
-                    <p class="description">
-                        Depois, pague somente R$ 19,90/mês. Cancele quando quiser.
-                    </p>
-
-                    <div class="buttons">
-                        <button class="btn primary">COMECE AGORA</button>
-                        <button class="btn secondary">VER PLANOS</button>
-                    </div>
-
-                    <div class="terms">
-                        <span class="link">Sujeito a Termos e Condições.</span> Oferta de 2 meses grátis não disponível para quem já usou o Premium.
-                    </div>
-                </header>
-            </div>
-
-            <div class="wrapper-features">
-                <div id="features-premium">
-                    <div class="title">Por que ser Premium?</div>
-                    <div class="features">
-                        <div class="feature">
-                            <img src="assets/icons/banner/images/modoOffline.png" />
-                            <div class="text">
-                                <div class="title">
-                                    Modo offline.
-                                </div>
-                                <div class="description">
-                                    Ouça música onde estiver.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="feature">
-                            <img src="assets/icons/banner/images/semAnuncio.png" />
-                            <div>
-                                <div class="title">
-                                    Ouça músicas sem anúncios.
-                                </div>
-                                <div class="description">
-                                    Curta música sem anúncios.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="feature">
-                            <img src="assets/icons/banner/images/oucaQuandoQuiser.png" />
-                            <div>
-                                <div class="title">
-                                    Ouça na ordem que quiser.
-                                </div>
-                                <div class="description">
-                                    Qualquer música em qualquer ordem.
-                                </div>
-                            </div>
-                            
-                        </div>
-
-                        <div class="feature">
-                            <img src="assets/icons/banner/images/qualidadeDeSom.svg" />
-                            <div>
-                                <div class="title">
-                                    Qualidade de som superior.
-                                </div>
-                                <div class="description">
-                                    Sinta o som.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          <div id="links">
+            <a href="">Premium</a>
+            <a href="">Suporte</a>
+            <a href="">Baixar</a>
+            <a href="">|</a>
+            <a href="">Inscrever-se</a>
+            <a href="">Entrar</a>
+          </div>
         </div>
-        
+      </nav>
 
-        <!-- Premium Plans -->
-    <div class="premium-wrapper">
-        <section class="premium-plans">
-            <div class="premium-plans__wrapper">
-            <!-- Header/Introduction -->
-            <header class="wrapper__header">
-                <h2 class="header__title">Escolha seu plano Premium</h2>
-                <h3 class="header__subtitle">
-                Ouça sem limites no seu celular, alto-falante e em outros
-                dispositivos.
-                </h3>
-                <!-- Payment Methods -->
-                <div class="header__payment-methods">
-                <!-- Bank Cards -->
-                <ul class="payment-methods__bank-cards">
-                    <li>
-                    <img
-                        class="bank-cards__card-image"
-                        src="./assets/icons/bank-cards/visa.svg"
-                        alt="Cartão Visa"
-                    />
-                    </li>
-                    <li>
-                    <img
-                        class="bank-cards__card-image"
-                        src="./assets/icons/bank-cards/mastercard.svg"
-                        alt="Cartão Mastercard"
-                    />
-                    </li>
-                    <li>
-                    <img
-                        class="bank-cards__card-image"
-                        src="./assets/icons/bank-cards/amex.svg"
-                        alt="Cartão American Express"
-                    />
-                    </li>
-                    <li>
-                    <img
-                        class="bank-cards__card-image"
-                        src="./assets/icons/bank-cards/elo.svg"
-                        alt="Cartão Elo"
-                    />
-                    </li>
-                    <li>
-                    <img
-                        class="bank-cards__card-image"
-                        src="./assets/icons/bank-cards/hipercard.svg"
-                        alt="Cartão Hipercard"
-                    />
-                    </li>
-                </ul>
-                <!-- More Methods -->
-                <span class="payment-methods__more-methods-message"
-                    >+ outros 11</span
-                >
-                </div>
-            </header>
-    
-            <!-- Plan Cards -->
-            <ul class="wrapper__cards">
-                <div class="cards__card">
-                <header class="card__header">
-                    <ul class="header__labels">
-                    <li
-                        class="labels__label labels__label--full labels__label--gray"
-                    >
-                        Faça uma assinatura e tenha 2 meses grátis
-                    </li>
-                    <li
-                        class="labels__label labels__label--outline labels__label--gray"
-                    >
-                        Pagamento único disponível
-                    </li>
-                    </ul>
-    
-                    <div class="header__plan-info">
-                    <h3 class="plan-info__title">Individual</h3>
-                    <p class="plan-info__price">
-                        R$ 19,90/mês após o período da oferta
-                    </p>
-                    <p class="plan-info__account-number">1 conta</p>
-                    </div>
-                </header>
-    
-                <hr class="card__divider" />
-    
-                <div class="card__body">
-                    <ul class="body__offers">
-                    <li class="offers__offer">
-                        <img
-                        src="./assets/icons/check.svg"
-                        alt="Ícone de marcado"
-                        class="offer__check-icon"
-                        />
-                        <p class="offer__description">Ouça músicas sem anúncios</p>
-                    </li>
-                    <li class="offers__offer">
-                        <img
-                        src="./assets/icons/check.svg"
-                        alt="Ícone de marcado"
-                        class="offer__check-icon"
-                        />
-                        <p class="offer__description">
-                        Ouça em qualquer lugar — até quando estiver offline
-                        </p>
-                    </li>
-                    <li class="offers__offer">
-                        <img
-                        src="./assets/icons/check.svg"
-                        alt="Ícone de marcado"
-                        class="offer__check-icon"
-                        />
-                        <p class="offer__description">
-                        Ouça músicas na ordem que quiser
-                        </p>
-                    </li>
-                    <li class="offers__offer">
-                        <img
-                        src="./assets/icons/check.svg"
-                        alt="Ícone de marcado"
-                        class="offer__check-icon"
-                        />
-                        <p class="offer__description">
-                        Faça um plano pré-pago ou uma assinatura
-                        </p>
-                    </li>
-                    </ul>
-    
-                    <a href="#" class="body__buy-button">COMECE AGORA</a>
-    
-                    <p class="body__terms-and-conditions">
-                    <a href="#" class="terms-and-conditions__link"
-                        >Sujeito a Termos e Condições</a
-                    >. Oferta de 2 meses grátis não disponível para quem já usou o
-                    Premium.
-                    </p>
-                </div>
-                </div>
-                <div class="cards__card">
-                <header class="card__header">
-                    <ul class="header__labels">
-                    <li class="labels__label labels__label--full">
-                        1 mês grátis ao assinar
-                    </li>
-                    <li class="labels__label labels__label--outline">
-                        Pagamento único disponível
-                    </li>
-                    </ul>
-    
-                    <div class="header__plan-info">
-                    <h3 class="plan-info__title">Duo</h3>
-                    <p class="plan-info__price">
-                        R$ 24,90/mês após o período da oferta
-                    </p>
-                    <p class="plan-info__account-number">2 contas</p>
-                    </div>
-                </header>
-    
-                <hr class="card__divider" />
-    
-                <div class="card__body">
-                    <ul class="body__offers">
-                    <li class="offers__offer">
-                        <img
-                        src="./assets/icons/check.svg"
-                        alt="Ícone de marcado"
-                        class="offer__check-icon"
-                        />
-                        <p class="offer__description">
-                        2 contas Premium para pessoas que moram juntas
-                        </p>
-                    </li>
-                    <li class="offers__offer">
-                        <img
-                        src="./assets/icons/check.svg"
-                        alt="Ícone de marcado"
-                        class="offer__check-icon"
-                        />
-                        <p class="offer__description">
-                        Música sem anúncios, no modo offline e na ordem que você
-                        quiser
-                        </p>
-                    </li>
-                    <li class="offers__offer">
-                        <img
-                        src="./assets/icons/check.svg"
-                        alt="Ícone de marcado"
-                        class="offer__check-icon"
-                        />
-                        <p class="offer__description">
-                        Faça um plano pré-pago ou uma assinatura
-                        </p>
-                    </li>
-                    </ul>
-    
-                    <a href="#" class="body__buy-button">COMECE AGORA</a>
-    
-                    <p class="body__terms-and-conditions">
-                    <a href="#" class="terms-and-conditions__link"
-                        >Sujeito a Termos e Condições</a
-                    >. O mês grátis não está disponível para usuários que já usaram
-                    o Premium.
-                    </p>
-                </div>
-                </div>
-                <div class="cards__card">
-                <header class="card__header">
-                    <ul class="header__labels">
-                    <li class="labels__label labels__label--full">
-                        1 mês grátis ao assinar
-                    </li>
-                    <li class="labels__label labels__label--outline">
-                        Pagamento único disponível
-                    </li>
-                    </ul>
-    
-                    <div class="header__plan-info">
-                    <h3 class="plan-info__title">Família</h3>
-                    <p class="plan-info__price">
-                        R$ 34,90/mês após o período da oferta
-                    </p>
-                    <p class="plan-info__account-number">Até 6 contas</p>
-                    </div>
-                </header>
-    
-                <hr class="card__divider" />
-    
-                <div class="card__body">
-                    <ul class="body__offers">
-                    <li class="offers__offer">
-                        <img
-                        src="./assets/icons/check.svg"
-                        alt="Ícone de marcado"
-                        class="offer__check-icon"
-                        />
-                        <p class="offer__description">
-                        6 contas Premium para familiares que moram no mesmo endereço
-                        </p>
-                    </li>
-                    <li class="offers__offer">
-                        <img
-                        src="./assets/icons/check.svg"
-                        alt="Ícone de marcado"
-                        class="offer__check-icon"
-                        />
-                        <p class="offer__description">
-                        Bloqueie músicas com conteúdo explícito
-                        </p>
-                    </li>
-                    <li class="offers__offer">
-                        <img
-                        src="./assets/icons/check.svg"
-                        alt="Ícone de marcado"
-                        class="offer__check-icon"
-                        />
-                        <p class="offer__description">
-                        Música sem anúncios, no modo offline e na ordem que você
-                        quiser
-                        </p>
-                    </li>
-                    <li class="offers__offer">
-                        <img
-                        src="./assets/icons/check.svg"
-                        alt="Ícone de marcado"
-                        class="offer__check-icon"
-                        />
-                        <p class="offer__description">
-                        Spotify Kids: um app separado, feito especialmente para
-                        crianças
-                        </p>
-                    </li>
-                    <li class="offers__offer">
-                        <img
-                        src="./assets/icons/check.svg"
-                        alt="Ícone de marcado"
-                        class="offer__check-icon"
-                        />
-                        <p class="offer__description">
-                        Faça um plano pré-pago ou uma assinatura
-                        </p>
-                    </li>
-                    </ul>
-    
-                    <a href="#" class="body__buy-button">COMECE AGORA</a>
-    
-                    <p class="body__terms-and-conditions">
-                    <a href="#" class="terms-and-conditions__link"
-                        >Sujeito a Termos e Condições</a
-                    >. O mês grátis não está disponível para usuários que já usaram
-                    o Premium.
-                    </p>
-                </div>
-                </div>
-                <div class="cards__card">
-                <header class="card__header">
-                    <ul class="header__labels">
-                    <li class="labels__label labels__label--full">
-                        1 mês grátis ao assinar
-                    </li>
-                    <li class="labels__label labels__label--outline">
-                        Pagamento único disponível
-                    </li>
-                    </ul>
-    
-                    <div class="header__plan-info">
-                    <h3 class="plan-info__title">Universitário</h3>
-                    <p class="plan-info__price">
-                        R$ 9,90/mês após o período da oferta
-                    </p>
-                    <p class="plan-info__account-number">1 conta</p>
-                    </div>
-                </header>
-    
-                <hr class="card__divider" />
-    
-                <div class="card__body">
-                    <ul class="body__offers">
-                    <li class="offers__offer">
-                        <img
-                        src="./assets/icons/check.svg"
-                        alt="Ícone de marcado"
-                        class="offer__check-icon"
-                        />
-                        <p class="offer__description">
-                        Desconto especial para estudantes universitários elegíveis
-                        </p>
-                    </li>
-                    <li class="offers__offer">
-                        <img
-                        src="./assets/icons/check.svg"
-                        alt="Ícone de marcado"
-                        class="offer__check-icon"
-                        />
-                        <p class="offer__description">Ouça músicas sem anúncios</p>
-                    </li>
-                    <li class="offers__offer">
-                        <img
-                        src="./assets/icons/check.svg"
-                        alt="Ícone de marcado"
-                        class="offer__check-icon"
-                        />
-                        <p class="offer__description">
-                        Ouça em qualquer lugar — até quando estiver offline
-                        </p>
-                    </li>
-                    <li class="offers__offer">
-                        <img
-                        src="./assets/icons/check.svg"
-                        alt="Ícone de marcado"
-                        class="offer__check-icon"
-                        />
-                        <p class="offer__description">
-                        Ouça músicas na ordem que quiser
-                        </p>
-                    </li>
-                    </ul>
-    
-                    <a href="#" class="body__buy-button">COMECE AGORA</a>
-    
-                    <p class="body__terms-and-conditions">
-                    Oferta disponível somente para estudantes de instituições de
-                    ensino superior credenciadas. O mês grátis não está disponível
-                    para usuários que já experimentaram o Premium.
-                    <a href="#" class="terms-and-conditions__link"
-                        >Sujeito a Termos e Condições</a
-                    >
-                    da oferta do Spotify de desconto para universitários.
-                    </p>
-                </div>
-                </div>
-            </ul>
+      <!-- Banner -->
+      <div class="wrapper-header">
+        <header id="banner">
+          <div class="title">Curta o Premium grátis por 2 meses</div>
+          <p class="description">
+            Depois, pague somente R$ 19,90/mês. Cancele quando quiser.
+          </p>
+
+          <div class="buttons">
+            <button class="btn primary">COMECE AGORA</button>
+            <button class="btn secondary">VER PLANOS</button>
+          </div>
+
+          <div class="terms">
+            <span class="link">Sujeito a Termos e Condições.</span> Oferta de 2
+            meses grátis não disponível para quem já usou o Premium.
+          </div>
+        </header>
+      </div>
+
+      <div class="wrapper-features">
+        <div id="features-premium">
+          <div class="title">Por que ser Premium?</div>
+          <div class="features">
+            <div class="feature">
+              <img src="assets/icons/banner/images/modoOffline.png" />
+              <div class="text">
+                <div class="title">Modo offline.</div>
+                <div class="description">Ouça música onde estiver.</div>
+              </div>
             </div>
-        </section>
+
+            <div class="feature">
+              <img src="assets/icons/banner/images/semAnuncio.png" />
+              <div>
+                <div class="title">Ouça músicas sem anúncios.</div>
+                <div class="description">Curta música sem anúncios.</div>
+              </div>
+            </div>
+
+            <div class="feature">
+              <img src="assets/icons/banner/images/oucaQuandoQuiser.png" />
+              <div>
+                <div class="title">Ouça na ordem que quiser.</div>
+                <div class="description">
+                  Qualquer música em qualquer ordem.
+                </div>
+              </div>
+            </div>
+
+            <div class="feature">
+              <img src="assets/icons/banner/images/qualidadeDeSom.svg" />
+              <div>
+                <div class="title">Qualidade de som superior.</div>
+                <div class="description">Sinta o som.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    </body>
+
+    <!-- Premium Plans -->
+    <div class="premium-wrapper">
+      <section class="premium-plans">
+        <div class="premium-plans__wrapper">
+          <!-- Header/Introduction -->
+          <header class="wrapper__header">
+            <h2 class="header__title">Escolha seu plano Premium</h2>
+            <h3 class="header__subtitle">
+              Ouça sem limites no seu celular, alto-falante e em outros
+              dispositivos.
+            </h3>
+            <!-- Payment Methods -->
+            <div class="header__payment-methods">
+              <!-- Bank Cards -->
+              <ul class="payment-methods__bank-cards">
+                <li>
+                  <img
+                    class="bank-cards__card-image"
+                    src="./assets/icons/bank-cards/visa.svg"
+                    alt="Cartão Visa"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="bank-cards__card-image"
+                    src="./assets/icons/bank-cards/mastercard.svg"
+                    alt="Cartão Mastercard"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="bank-cards__card-image"
+                    src="./assets/icons/bank-cards/amex.svg"
+                    alt="Cartão American Express"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="bank-cards__card-image"
+                    src="./assets/icons/bank-cards/elo.svg"
+                    alt="Cartão Elo"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="bank-cards__card-image"
+                    src="./assets/icons/bank-cards/hipercard.svg"
+                    alt="Cartão Hipercard"
+                  />
+                </li>
+              </ul>
+              <!-- More Methods -->
+              <span class="payment-methods__more-methods-message"
+                >+ outros 11</span
+              >
+            </div>
+          </header>
+
+          <!-- Plan Cards -->
+          <ul class="wrapper__cards">
+            <li class="cards__card">
+              <header class="card__header">
+                <ul class="header__labels">
+                  <li
+                    class="labels__label labels__label--full labels__label--gray"
+                  >
+                    Faça uma assinatura e tenha 2 meses grátis
+                  </li>
+                  <li
+                    class="labels__label labels__label--outline labels__label--gray"
+                  >
+                    Pagamento único disponível
+                  </li>
+                </ul>
+
+                <div class="header__plan-info">
+                  <h3 class="plan-info__title">Individual</h3>
+                  <p class="plan-info__price">
+                    R$ 19,90/mês após o período da oferta
+                  </p>
+                  <p class="plan-info__account-number">1 conta</p>
+                </div>
+              </header>
+
+              <hr class="card__divider" />
+
+              <div class="card__body">
+                <ul class="body__offers">
+                  <li class="offers__offer">
+                    <img
+                      src="./assets/icons/check.svg"
+                      alt="Ícone de marcado"
+                      class="offer__check-icon"
+                    />
+                    <p class="offer__description">Ouça músicas sem anúncios</p>
+                  </li>
+                  <li class="offers__offer">
+                    <img
+                      src="./assets/icons/check.svg"
+                      alt="Ícone de marcado"
+                      class="offer__check-icon"
+                    />
+                    <p class="offer__description">
+                      Ouça em qualquer lugar — até quando estiver offline
+                    </p>
+                  </li>
+                  <li class="offers__offer">
+                    <img
+                      src="./assets/icons/check.svg"
+                      alt="Ícone de marcado"
+                      class="offer__check-icon"
+                    />
+                    <p class="offer__description">
+                      Ouça músicas na ordem que quiser
+                    </p>
+                  </li>
+                  <li class="offers__offer">
+                    <img
+                      src="./assets/icons/check.svg"
+                      alt="Ícone de marcado"
+                      class="offer__check-icon"
+                    />
+                    <p class="offer__description">
+                      Faça um plano pré-pago ou uma assinatura
+                    </p>
+                  </li>
+                </ul>
+
+                <a href="#" class="body__buy-button">COMECE AGORA</a>
+
+                <p class="body__terms-and-conditions">
+                  <a href="#" class="terms-and-conditions__link"
+                    >Sujeito a Termos e Condições</a
+                  >. Oferta de 2 meses grátis não disponível para quem já usou o
+                  Premium.
+                </p>
+              </div>
+            </li>
+            <li class="cards__card">
+              <header class="card__header">
+                <ul class="header__labels">
+                  <li class="labels__label labels__label--full">
+                    1 mês grátis ao assinar
+                  </li>
+                  <li class="labels__label labels__label--outline">
+                    Pagamento único disponível
+                  </li>
+                </ul>
+
+                <div class="header__plan-info">
+                  <h3 class="plan-info__title">Duo</h3>
+                  <p class="plan-info__price">
+                    R$ 24,90/mês após o período da oferta
+                  </p>
+                  <p class="plan-info__account-number">2 contas</p>
+                </div>
+              </header>
+
+              <hr class="card__divider" />
+
+              <div class="card__body">
+                <ul class="body__offers">
+                  <li class="offers__offer">
+                    <img
+                      src="./assets/icons/check.svg"
+                      alt="Ícone de marcado"
+                      class="offer__check-icon"
+                    />
+                    <p class="offer__description">
+                      2 contas Premium para pessoas que moram juntas
+                    </p>
+                  </li>
+                  <li class="offers__offer">
+                    <img
+                      src="./assets/icons/check.svg"
+                      alt="Ícone de marcado"
+                      class="offer__check-icon"
+                    />
+                    <p class="offer__description">
+                      Música sem anúncios, no modo offline e na ordem que você
+                      quiser
+                    </p>
+                  </li>
+                  <li class="offers__offer">
+                    <img
+                      src="./assets/icons/check.svg"
+                      alt="Ícone de marcado"
+                      class="offer__check-icon"
+                    />
+                    <p class="offer__description">
+                      Faça um plano pré-pago ou uma assinatura
+                    </p>
+                  </li>
+                </ul>
+
+                <a href="#" class="body__buy-button">COMECE AGORA</a>
+
+                <p class="body__terms-and-conditions">
+                  <a href="#" class="terms-and-conditions__link"
+                    >Sujeito a Termos e Condições</a
+                  >. O mês grátis não está disponível para usuários que já
+                  usaram o Premium.
+                </p>
+              </div>
+            </li>
+            <li class="cards__card">
+              <header class="card__header">
+                <ul class="header__labels">
+                  <li class="labels__label labels__label--full">
+                    1 mês grátis ao assinar
+                  </li>
+                  <li class="labels__label labels__label--outline">
+                    Pagamento único disponível
+                  </li>
+                </ul>
+
+                <div class="header__plan-info">
+                  <h3 class="plan-info__title">Família</h3>
+                  <p class="plan-info__price">
+                    R$ 34,90/mês após o período da oferta
+                  </p>
+                  <p class="plan-info__account-number">Até 6 contas</p>
+                </div>
+              </header>
+
+              <hr class="card__divider" />
+
+              <div class="card__body">
+                <ul class="body__offers">
+                  <li class="offers__offer">
+                    <img
+                      src="./assets/icons/check.svg"
+                      alt="Ícone de marcado"
+                      class="offer__check-icon"
+                    />
+                    <p class="offer__description">
+                      6 contas Premium para familiares que moram no mesmo
+                      endereço
+                    </p>
+                  </li>
+                  <li class="offers__offer">
+                    <img
+                      src="./assets/icons/check.svg"
+                      alt="Ícone de marcado"
+                      class="offer__check-icon"
+                    />
+                    <p class="offer__description">
+                      Bloqueie músicas com conteúdo explícito
+                    </p>
+                  </li>
+                  <li class="offers__offer">
+                    <img
+                      src="./assets/icons/check.svg"
+                      alt="Ícone de marcado"
+                      class="offer__check-icon"
+                    />
+                    <p class="offer__description">
+                      Música sem anúncios, no modo offline e na ordem que você
+                      quiser
+                    </p>
+                  </li>
+                  <li class="offers__offer">
+                    <img
+                      src="./assets/icons/check.svg"
+                      alt="Ícone de marcado"
+                      class="offer__check-icon"
+                    />
+                    <p class="offer__description">
+                      Spotify Kids: um app separado, feito especialmente para
+                      crianças
+                    </p>
+                  </li>
+                  <li class="offers__offer">
+                    <img
+                      src="./assets/icons/check.svg"
+                      alt="Ícone de marcado"
+                      class="offer__check-icon"
+                    />
+                    <p class="offer__description">
+                      Faça um plano pré-pago ou uma assinatura
+                    </p>
+                  </li>
+                </ul>
+
+                <a href="#" class="body__buy-button">COMECE AGORA</a>
+
+                <p class="body__terms-and-conditions">
+                  <a href="#" class="terms-and-conditions__link"
+                    >Sujeito a Termos e Condições</a
+                  >. O mês grátis não está disponível para usuários que já
+                  usaram o Premium.
+                </p>
+              </div>
+            </li>
+            <li class="cards__card">
+              <header class="card__header">
+                <ul class="header__labels">
+                  <li class="labels__label labels__label--full">
+                    1 mês grátis ao assinar
+                  </li>
+                  <li class="labels__label labels__label--outline">
+                    Pagamento único disponível
+                  </li>
+                </ul>
+
+                <div class="header__plan-info">
+                  <h3 class="plan-info__title">Universitário</h3>
+                  <p class="plan-info__price">
+                    R$ 9,90/mês após o período da oferta
+                  </p>
+                  <p class="plan-info__account-number">1 conta</p>
+                </div>
+              </header>
+
+              <hr class="card__divider" />
+
+              <div class="card__body">
+                <ul class="body__offers">
+                  <li class="offers__offer">
+                    <img
+                      src="./assets/icons/check.svg"
+                      alt="Ícone de marcado"
+                      class="offer__check-icon"
+                    />
+                    <p class="offer__description">
+                      Desconto especial para estudantes universitários elegíveis
+                    </p>
+                  </li>
+                  <li class="offers__offer">
+                    <img
+                      src="./assets/icons/check.svg"
+                      alt="Ícone de marcado"
+                      class="offer__check-icon"
+                    />
+                    <p class="offer__description">Ouça músicas sem anúncios</p>
+                  </li>
+                  <li class="offers__offer">
+                    <img
+                      src="./assets/icons/check.svg"
+                      alt="Ícone de marcado"
+                      class="offer__check-icon"
+                    />
+                    <p class="offer__description">
+                      Ouça em qualquer lugar — até quando estiver offline
+                    </p>
+                  </li>
+                  <li class="offers__offer">
+                    <img
+                      src="./assets/icons/check.svg"
+                      alt="Ícone de marcado"
+                      class="offer__check-icon"
+                    />
+                    <p class="offer__description">
+                      Ouça músicas na ordem que quiser
+                    </p>
+                  </li>
+                </ul>
+
+                <a href="#" class="body__buy-button">COMECE AGORA</a>
+
+                <p class="body__terms-and-conditions">
+                  Oferta disponível somente para estudantes de instituições de
+                  ensino superior credenciadas. O mês grátis não está disponível
+                  para usuários que já experimentaram o Premium.
+                  <a href="#" class="terms-and-conditions__link"
+                    >Sujeito a Termos e Condições</a
+                  >
+                  da oferta do Spotify de desconto para universitários.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </body>
 </html>
