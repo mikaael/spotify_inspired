@@ -34,6 +34,51 @@ header #logo {
   height: auto;
 }
 
+/*Botões de login rápido*/
+.signup .shortcut-login button {
+  width: 50px;
+  background-color: transparent;
+  border: none;
+}
+
+.signup .shortcut-login button:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.signup .shortcut-login button.apple-sc {
+  background-color: white;
+}
+
+.signup .shortcut-login img {
+  width: 100%;
+}
+
+.signup .shortcut-login {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 22px;
+}
+
+.divider {
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 22px;
+  gap: 15px;
+  color: #7f7f7f;
+}
+
+hr {
+  border: 0.5px solid #cccccc;
+  width: 170px;
+}
+
 /*Container do formulário*/
 .signup {
   max-width: 450px;
