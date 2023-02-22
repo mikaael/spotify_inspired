@@ -7,11 +7,7 @@
 
 /*Fonte*/
 body {
-  font-family: "Open Sans", sans-serif;
-
-  /*background: rgb(14,187,11);
-  background: linear-gradient(172deg, rgba(14,187,11,1) 0%, rgba(0, 0, 0, 1) 53%);
-  height: 100vh;*/
+  font-family: 'Open Sans', sans-serif;
 }
 
 /*Removendo o seletor do select*/
@@ -129,10 +125,10 @@ hr {
   gap: 8px;
 }
 
-.signup form input[type="email"],
-.signup form input[type="password"],
-.signup form input[type="text"],
-.signup form input[type="number"],
+.signup form input[type='email'],
+.signup form input[type='password'],
+.signup form input[type='text'],
+.signup form input[type='number'],
 .signup form select {
   width: 100%;
   padding: 0px 14px;
